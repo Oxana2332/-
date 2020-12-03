@@ -1,0 +1,12 @@
+.top {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    text-decoration: none;
+    width: 30px;
+    height: 40px;
+    border-radius: 90%;
+    background: #BDBDBD11;
+    text-align: center;
+    color: black;
+}

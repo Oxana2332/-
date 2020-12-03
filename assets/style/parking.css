@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url(../fonts/TTHoves-Light.ttf);
+    src: url(../fonts/TTHoves-Bold.ttf);
+    src: url(../fonts/OpenSans-Light.ttf);
+    src: url(../fonts/OpenSans-Bold.ttf)
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-right: 135px;
+        margin-left: 135px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Стили заголовка*/
+
+@media screen and (min-width: 768px) {
+    .main__title {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #BDBDBD;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main__title {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #BDBDBD;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main__title_bold {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #333333;
+        margin-top: -1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main__title_bold {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #333333;
+        margin-top: -1em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Стили главной картинки*/
+@media screen and (max-width: 767px) {
+    .main__pic {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main__pic {
+        display: flex;
+        width: 97%;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .main__pic {
+        display: flex;
+        margin-top: 30px;
+    }
+}
+
+/* Стили блока картинки с текстом*/
+@media screen and (min-width: 1366px) {
+    .main-article {
+        margin-top: 30px;
+        margin-left: -30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main-article {
+        margin-top: 30px;
+        margin-left: -30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-article {
+        margin-top: 30px;
+    }
+}
+
+/* Стили текста в блоке картинки с текстом*/
+@media screen and (max-width: 767px) {
+    .main-article__text {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: #000000;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main-article__text {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.6rem;
+        color: #000000;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .main-article__text {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: #000000;
+    }
+}
+
+/* Стили последнего блока*/
+@media screen and (min-width: 768px) {
+    .main-section {
+        display: flex;
+        margin-top: 50px;
+    }
+}
+
+/* Стили заголовка в последнем блоке*/
+@media screen and (min-width: 1366px) {
+    .main-section__title {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 3rem;
+        color: #BDBDBD;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main-section__title {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2rem;
+        color: #BDBDBD;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-section__title {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #BDBDBD;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Стили текста в последнем блоке*/
+@media screen and (min-width: 1366px) {
+    .main-section__text {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: #000000;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main-section__text {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.6rem;
+        color: #000000;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-section__text {
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: #000000;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Стили картинки в последнем блоке*/
+
+@media screen and (min-width: 1366px) {
+    .main-section__image {
+        width: 30%;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main-section__image {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-section__image {
+        width: 100%;
+        margin-bottom: -20px;
+    }
+}

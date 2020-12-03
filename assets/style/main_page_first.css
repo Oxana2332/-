@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url(../fonts/TTHoves-Light.ttf);
+    src: url(../fonts/TTHoves-Bold.ttf);
+    src: url(../fonts/OpenSans-Light.ttf);
+    src: url(../fonts/OpenSans-Bold.ttf)
+}
+
+/*---Первая секция главной страницы Название--------------------------------------------*/
+
+@media screen and (min-width: 1366px) {
+    .main {
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        height: 829px;
+        margin: 0 0 0 0;
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main {
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        height: 600px;
+        margin: 0 0 0 0;
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        display: grid;
+        grid-template-rows: auto;
+        margin: 0 0 0 0;
+        text-align: center;
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .main {
+       margin-top: 30px;
+    }
+}
+
+/*Левая часть*/
+@media screen and (min-width: 1366px) {
+    .main__information {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: end;
+        margin-top: 21rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main__information {
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main__information {
+        display: grid;
+        grid-template-rows: 1fr;
+        margin-top: 0;
+    }
+}
+
+/* Стили заголовка*/
+
+.main__title_first-word {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.main__title_second-word {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+@media screen and (max-width: 767px) {
+
+    .main__title_first-word,
+    .main__title_second-word {
+        font-size: 40px;
+    }
+}
+
+/*Кнопки и цифры*/
+.main__button {
+    height: 3.4rem;
+    margin: 0 0.5rem;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .main__button {
+        display: none;
+    }
+}
+
+.main__button:hover {
+    box-shadow: 0 0 0.8rem rgba(46, 44, 44, 0.5);
+}
+
+.main__page {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 3.4rem;
+}
+
+@media screen and (max-width: 767px) {
+    .main__page {
+        display: none;
+    }
+}
+
+.main__page-number {
+    font-size: 1.5rem;
+    line-height: 3.4rem;
+    cursor: default;
+    color: #BDBDBD;
+}
+
+.main__page-slash {
+    margin: auto 1rem auto 1rem;
+    height: 1.5rem;
+}
+
+/*Изображение и ссылка в правой части*/
+.main__project {
+    display: flex;
+    /*justify-self: flex-end;*/
+    align-items: flex-end;
+    /*width: 770px;*/
+    height: 829px;
+    background: url(../images/main/main-image.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main__project {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main__project {
+        height: 300px;
+    }
+}
+
+.main__link {
+    width: 13.88rem;
+    height: 4.44rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .75rem;
+    line-height: 4.44rem;
+    letter-spacing: 0.2em;
+    color: #333333;
+    background-color: rgb(248, 242, 242);
+}

@@ -1,0 +1,239 @@
+/** {
+    margin: 0;
+    padding: 0;
+}*/
+
+@font-face {
+    font-family: sans-serif;
+    src: url(../fonts/TTHoves-Light.ttf);
+    src: url(../fonts/TTHoves-Bold.ttf);
+    src: url(../fonts/OpenSans-Light.ttf);
+    src: url(../fonts/OpenSans-Bold.ttf)
+}
+
+.contact {
+    font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    background-color: #ffffff;
+}
+
+/*.center-block {
+    margin: 1rem 2rem 5rem 7rem;
+}*/
+
+.column-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/*html {
+    font-size: 16px;
+}*/
+
+.title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+
+.contact-image {
+    max-width: 51vw;
+    margin-left: 1rem;
+}
+
+.send-button {
+    display: block;
+    width: 221.81px;
+    height: 71px;
+    margin-top: 30px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 71px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    background-color: #333333;
+}
+
+.send-button:hover {
+    text-decoration: underline;
+    color: rgb(10, 65, 168);
+}
+
+.form-chech-user-settings {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .column-container {
+        justify-content: center;
+        margin: 0 10px 0 10px;
+    }
+    
+    .title {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    textarea {
+        margin-top: -3.6%;
+    }
+
+    .send-button {
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+
+    /*.center-block {
+        margin: auto 2rem 2rem 2rem;
+    }*/
+}
+
+/*@media screen and (min-width: 321px) and (max-width: 479px) {
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    textarea {
+        margin-top: -3.6%;
+    }
+
+   /* .center-block {
+        margin: auto 2rem 2rem 2rem;
+    }
+}*/
+
+/*@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    textarea {
+        margin-top: -3.6%;
+    }
+
+    /*.center-block {
+        margin: auto 2rem 3rem 2rem;
+    }
+}*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .column-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .title {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    .send-button {
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+
+    /*.center-block {
+        margin: auto 2rem 4rem 10rem;
+    }*/
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+    .column-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .title {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .send-button {
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+   /* .contact-image {
+        display: none;
+    }
+    .center-block {
+        margin: auto 2rem 5rem 20rem;
+    }*/
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1365px) {
+    .column-container {
+        justify-content: center;
+    }
+
+    .title {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .send-button {
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+}
+
+.form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #F5F5F5;
+    font-size: 0.8rem;
+}
+
+/*.btn-solid {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    width: 211px;
+    height: 55px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    letter-spacing: 0.2em;
+}*/
+
+textarea {
+    margin-top: -3.6%;
+}

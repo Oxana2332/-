@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url(../fonts/TTHoves-Light.ttf);
+    src: url(../fonts/TTHoves-Bold.ttf);
+    src: url(../fonts/OpenSans-Light.ttf);
+    src: url(../fonts/OpenSans-Bold.ttf)
+}
+
+body {
+    font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+main {
+    margin: 0 135px 0 135px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    main {
+        margin: 0 30px 0 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        margin: 10px;
+    }
+}
+
+/* Стили заголовка*/
+
+.title__word_first {
+    font-weight: 300;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.title__word_second {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+@media screen and (max-width: 767px) {
+    .title {
+        text-align: center;
+    }
+    
+    .title__word_first,
+    .title__word_second {
+        font-size: 3rem;
+    }
+}
+
+/* Оформление постов*/
+.post__images {
+    max-width: 100%;
+    width: 100%;
+}
+
+.container__post {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+@media screen and (min-width: 768px) {
+    .post {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .post__information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .post__information {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .post__information {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 2px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.post__information-title {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    color: #BDBDBD;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .post__information-title {
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .post__information-title {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        padding-top: 15px;
+    }
+}
+
+.post__information-text {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.56rem;
+    color: #000000;
+}
+
+/*Ссылка на проект*/
+.post__information-link {
+    width: 13.88rem;
+    height: 4.44rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .75rem;
+    line-height: 4.44rem;
+    letter-spacing: 0.2em;
+    color: #333333;
+    background-color: rgb(248, 242, 242);
+}
+
+/*Счетчик*/
+.page-box {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 3.4rem;
+    margin: 2rem 0 5rem 0;
+}
+
+@media screen and (max-width: 767px) {
+    .page-box {
+        margin: 2rem auto 5rem auto;
+    }
+
+    .page-box__number,
+    .page-box__number_slash {
+        display: none;
+    }
+}
+
+.page-box__number {
+    font-size: 1.5rem;
+    line-height: 3.4rem;
+    margin: 0 1rem 0 1rem;
+    cursor: default;
+}
+
+.page-box__number_current {
+    color: #000000;
+}
+
+.page-box__number_max {
+    color: #BDBDBD;
+}
+
+.page-box__number_slash {
+    max-width: 100%;
+    width: 100%;
+    margin: auto 1rem auto 1rem;
+    height: 1.5rem;
+}
+
+.page-box__number_button {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 1rem 0 1rem;
+    outline: none;
+    border: none;
+}
+
+.page-box__number_button:hover {
+    box-shadow: 0 0 0.8rem rgba(46, 44, 44, 0.5);
+}
