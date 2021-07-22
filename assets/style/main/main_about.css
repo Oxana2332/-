@@ -13,27 +13,9 @@
     row-gap: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .main_about_images1 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .main_about_images1 {
-        display: none;
-    }
-}
-
 .main_about_images2 {
     display: flex;
     align-items: center;
-}
-
-@media screen and (max-width: 580px) {
-    .main_about_images2 {
-        display: none;
-    }
 }
 
 .main_about_text {
@@ -44,57 +26,16 @@
     font-weight: lighter;
 }
 
-@media screen and (max-width: 580px) {
-    .main_about_text {
-        align-items: center;
-    }
-}
-
 .main_about_text1 {
     font-size: 64px;
     font-weight: 100;
     color: #BDBDBD;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .main_about_text1 {
-        font-size: 50px;
-        /*В этой строчке и следующей 50рх в средней версии для заголовков*/
-        line-height: 50px;
-        font-weight: 100;
-        color: #BDBDBD;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .main_about_text1 {
-    text-align: center;
-    font-size: 30px;
-    line-height: 30px;
-    margin: 0 0 10px 0;
-    }
-}
-
-
 .main_about_text2 {
     font-size: 16px;
     color: #000000;
     line-height: 2;
-}
-
-@media screen and (max-width: 767px) {
-    .main_about_text2 {
-        font-size: 16px;
-        line-height: 16px;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .main_about_text2 {
-        text-align: center;
-        font-size: 13px;
-        line-height: 15px;
-    }
 }
 
 .toread {
@@ -113,4 +54,54 @@
 .toread_link {
     text-decoration: none;
     color: rgba(51, 51, 51, 1)
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main_about_images1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .main_about_text1 {
+        font-size: 50px;
+        /*В этой строчке и следующей 50рх в средней версии для заголовков*/
+        line-height: 50px;
+        font-weight: 100;
+        color: #BDBDBD;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main_about_images1 {
+        display: none;
+    }
+
+    .main_about_text1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+    }
+
+    .main_about_text2 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .main_about_images2 {
+        display: none;
+    }
+
+    .main_about_text {
+        align-items: center;
+    }
+
+    .main_about_text2 {
+        text-align: center;
+        font-size: 13px;
+        line-height: 15px;
+    }
 }

@@ -22,13 +22,6 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .tasks {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 /*Заголовок*/
 
 @media screen and (min-width: 1366px) {
@@ -67,6 +60,11 @@
         font-size: 30px;
         line-height: 30px;
         margin: 0 0 10px 0;
+    }
+
+    .tasks {
+        display: flex;
+        flex-direction: column;
     }
 }
 

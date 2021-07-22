@@ -21,18 +21,6 @@ main {
     margin: 0 135px 0 135px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    main {
-        margin: 0 30px 0 30px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    main {
-        margin: 10px;
-    }
-}
-
 /* Стили заголовка*/
 
 .title__word_first {
@@ -49,17 +37,6 @@ main {
     color: #333333;
 }
 
-@media screen and (max-width: 767px) {
-    .title {
-        text-align: center;
-    }
-    
-    .title__word_first,
-    .title__word_second {
-        font-size: 3rem;
-    }
-}
-
 /* Оформление постов*/
 .post__images {
     max-width: 100%;
@@ -71,74 +48,11 @@ main {
     grid-template-rows: repeat(3, auto);
 }
 
-@media screen and (min-width: 768px) {
-    .post {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
-        margin-top: 4rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .post {
-        display: flex;
-        flex-direction: column;
-        row-gap: 1px;
-        margin-top: 1rem;
-    }
-}
-
-@media screen and (min-width: 1366px) {
-    .post__information {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-right: 4rem;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .post__information {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        justify-content: space-around;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .post__information {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        margin-top: 2px;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-    }
-}
-
 .post__information-title {
     font-weight: 300;
     font-size: 2.5rem;
     line-height: 3.1rem;
     color: #BDBDBD;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .post__information-title {
-        font-size: 1.7rem;
-        line-height: 1.9rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .post__information-title {
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-        padding-top: 15px;
-    }
 }
 
 .post__information-text {
@@ -173,17 +87,6 @@ main {
     margin: 2rem 0 5rem 0;
 }
 
-@media screen and (max-width: 767px) {
-    .page-box {
-        margin: 2rem auto 5rem auto;
-    }
-
-    .page-box__number,
-    .page-box__number_slash {
-        display: none;
-    }
-}
-
 .page-box__number {
     font-size: 1.5rem;
     line-height: 3.4rem;
@@ -216,4 +119,87 @@ main {
 
 .page-box__number_button:hover {
     box-shadow: 0 0 0.8rem rgba(46, 44, 44, 0.5);
+}
+
+@media screen and (min-width: 1366px) {
+    .post__information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    main {
+        margin: 0 30px 0 30px;
+    }
+
+    .post__information {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: space-around;
+    }
+
+    .post__information-title {
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        margin: 10px;
+    }
+
+    .title {
+        text-align: center;
+    }
+    
+    .title__word_first,
+    .title__word_second {
+        font-size: 3rem;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1px;
+        margin-top: 1rem;
+    }
+
+    .post__information {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 2px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .post__information-title {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        padding-top: 15px;
+    }
+
+    .page-box {
+        margin: 2rem auto 5rem auto;
+    }
+
+    .page-box__number,
+    .page-box__number_slash {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .post {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        margin-top: 4rem;
+    }
 }

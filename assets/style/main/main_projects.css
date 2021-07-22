@@ -19,29 +19,6 @@
     margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .projects__title {
-        font-style: normal;
-        font-weight: 300;
-        color: #BDBDBD;
-        margin-bottom: 60px;
-        font-size: 50px;
-        /*В этой строчке и следующей 50рх в средней версии для заголовков*/
-        line-height: 50px;
-        text-align: center;
-    }
-}
-
-
-@media screen and (max-width: 767px) {
-    .projects__title {
-        text-align: center;
-        font-size: 30px;
-        line-height: 30px;
-        margin: 0 0 10px 0;
-    }
-}
-
 .projects__box {
     display: flex;
     flex-direction: row;
@@ -50,41 +27,15 @@
     row-gap: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .projects__box {
-        justify-content: space-around;
-    }
-
-    .projects__box_info-2 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .projects__box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 10px;
-    }
-
-    .projects__box_image-3,
-    .projects__box_image-4,
-    .projects__box_image-5 {
-        display: none;
-    }
-
-    .projects__box_image-1,
-    .projects__box_image-2 {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
 .projects__box_info-1,
 .projects__box_info-2 {
     position: relative;
+}
+
+.projects__box_info-1:hover .projects__box_info-text,
+.projects__box_info-2:hover .projects__box_info-text {
+    display: block;
+    opacity: 1;
 }
 
 .projects__box_image-1,
@@ -114,37 +65,6 @@
     transition: all .5s;
 }
 
-@media screen and (max-width: 767px) {
-    .projects__box_info-text {
-        padding-top: 24px;
-        font-size: 50px;
-        line-height: 50px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .projects__box_info-text {
-        padding-top: 30px;
-        font-size: 30px;
-        line-height: 30px;
-    }
-}
-
-.projects__box_info-1:hover .projects__box_info-text,
-.projects__box_info-2:hover .projects__box_info-text {
-    display: block;
-    opacity: 1;
-}
-
-@media screen and (max-width: 767px) {
-
-    .projects__box_info-1,
-    .projects__box_info-2 {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
 .projects__box_info-link {
     display: block;
     padding-top: 10px;
@@ -155,14 +75,6 @@
     line-height: 14px;
     letter-spacing: 0.2em;
     color: #FFFFFF;
-}
-
-@media screen and (max-width: 480px) {
-    .projects__box_info-link {
-        font-size: 12px;
-        line-height: 12px;
-
-    }
 }
 
 .projects__link,
@@ -189,5 +101,80 @@
     .projects__link::after,
     .projects__link::before {
         margin: 30px auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .projects__box {
+        justify-content: space-around;
+    }
+
+    .projects__box_info-2 {
+        display: none;
+    }
+
+    .projects__title {
+        font-style: normal;
+        font-weight: 300;
+        color: #BDBDBD;
+        margin-bottom: 60px;
+        font-size: 50px;
+        /*В этой строчке и следующей 50рх в средней версии для заголовков*/
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .projects__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .projects__box_image-3,
+    .projects__box_image-4,
+    .projects__box_image-5 {
+        display: none;
+    }
+
+    .projects__box_image-1,
+    .projects__box_image-2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .projects__title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0 0 10px 0;
+    }
+
+    .projects__box_info-text {
+        padding-top: 24px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .projects__box_info-1,
+    .projects__box_info-2 {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects__box_info-link {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .projects__box_info-text {
+        padding-top: 30px;
+        font-size: 30px;
+        line-height: 30px;
     }
 }

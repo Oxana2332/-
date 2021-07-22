@@ -6,9 +6,56 @@
     src: url(../fonts/OpenSans-Bold.ttf)
 }
 
-@media screen and (max-width: 767px) {
+.active_link {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 1366px) {
     .header {
+        display: flex;
         height: 102px;
+    }
+
+    .header__logo {
+        width: 70px;
+        height: 44px;
+        margin-left: 135px;
+        margin-top: 29px;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        margin-left: 330px;
+    }
+
+    .header-nav__link_first {
+        display: flex;
+        flex-direction: column;
+        width: 69px;
+        text-decoration: none;
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #333333;
+    }
+
+    .header-nav__link {
+        text-decoration: none;
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #333333;
+        margin-left: 60px;
     }
 }
 
@@ -18,12 +65,46 @@
         height: 102px;
         align-items: center;
     }
-}
 
-@media screen and (min-width: 1366px) {
-    .header {
+    .header__logo {
+        width: 70px;
+        height: 44px;
+        margin-left: 135px;
+        margin-top: 10px;
+    }
+
+    .header-nav {
         display: flex;
-        height: 102px;
+        align-items: center;
+    }
+
+    .header-nav__link_first {
+        display: flex;
+        flex-direction: column;
+        width: 69px;
+        text-decoration: none;
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #333333;
+        margin-left: 30px;
+    }
+
+    .header-nav__link {
+        text-decoration: none;
+        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #333333;
+        margin-left: 30px;
     }
 }
 
@@ -34,27 +115,11 @@
         margin-left: 10px;
         margin-top: 10px;
     }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .header__logo {
-        width: 70px;
-        height: 44px;
-        margin-left: 135px;
-        margin-top: 10px;
+    .header {
+        height: 102px;
     }
-}
 
-@media screen and (min-width: 1366px) {
-    .header__logo {
-        width: 70px;
-        height: 44px;
-        margin-left: 135px;
-        margin-top: 29px;
-    }
-}
-
-@media screen and (max-width: 767px) {
     .header-nav {
         row-gap: 7px;
         display: grid;
@@ -63,24 +128,7 @@
         margin-left: 100px;
         margin-top: -40px;
     }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .header-nav {
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media screen and (min-width: 1366px) {
-    .header-nav {
-        display: flex;
-        align-items: center;
-        margin-left: 330px;
-    }
-}
-
-@media screen and (max-width: 767px) {
     .header-nav__link_first {
         display: flex;
         flex-direction: column;
@@ -96,45 +144,7 @@
         color: #333333;
         margin-left: 3px;
     }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .header-nav__link_first {
-        display: flex;
-        flex-direction: column;
-        width: 69px;
-        text-decoration: none;
-        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: #333333;
-        margin-left: 30px;
-    }
-}
-
-@media screen and (min-width: 1366px) {
-    .header-nav__link_first {
-        display: flex;
-        flex-direction: column;
-        width: 69px;
-        text-decoration: none;
-        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: #333333;
-    }
-}
-
-
-@media screen and (max-width: 767px) {
     .header-nav__link {
         text-decoration: none;
         font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
@@ -147,39 +157,4 @@
         color: #333333;
         margin-left: 3px;
     }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .header-nav__link {
-        text-decoration: none;
-        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: #333333;
-        margin-left: 30px;
-    }
-}
-
-@media screen and (min-width: 1366px) {
-    .header-nav__link {
-        text-decoration: none;
-        font-family: 'TT Hoves Hairline', 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: #333333;
-        margin-left: 60px;
-    }
-}
-
-.active_link {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
 }

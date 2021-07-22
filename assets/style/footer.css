@@ -26,36 +26,6 @@
     padding: 58px 135px 60px 135px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-    .footer__main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1.5fr 1fr;
-        column-gap: 15px;        
-        padding: 58px 35px 55px 35px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .footer__main {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 5px 20px 5px;
-        text-align: center;
-    }
-
-    .footer__logo {
-        display: none;
-    }
-
-    .footer__information {
-        display: none;
-    }
-
-    .footer__social {
-        margin-top: 30px;
-    }
-}
-
 .footer__logo {
     justify-self: center;
 }
@@ -97,25 +67,10 @@
     grid-gap: 40px;
 }
 
-@media screen and (max-width: 767px) {
-    .footer__contacts-list {
-        grid-gap: 10px;
-    }
-}
-
 .footer__social-link {
     display: flex;
     flex-direction: row;
     grid-gap: 40px;
-}
-
-@media screen and (max-width: 767px) {
-    .footer__social-link {
-        display: flex;
-        flex-direction: row;
-        grid-gap: 40px;
-        justify-content: center;
-    }
 }
 
 .footer__images {
@@ -134,8 +89,47 @@
     color: rgba(200, 200, 200, 0.5);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    .footer__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr 1fr;
+        column-gap: 15px;        
+        padding: 58px 35px 55px 35px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .footer__copyright {
         padding: 10px 0;
+    }
+
+    .footer__main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 5px 20px 5px;
+        text-align: center;
+    }
+
+    .footer__logo {
+        display: none;
+    }
+
+    .footer__information {
+        display: none;
+    }
+
+    .footer__social {
+        margin-top: 30px;
+    }
+
+    .footer__contacts-list {
+        grid-gap: 10px;
+    }
+
+    .footer__social-link {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 40px;
+        justify-content: center;
     }
 }
